@@ -103,6 +103,9 @@ enum OrderDirection {
 }
 
 enum Aggregation_interval {
+  fiveminutes
+  halfhour
   hour
+  fourhours
   day
 }

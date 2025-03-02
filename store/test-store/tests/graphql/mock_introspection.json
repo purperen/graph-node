@@ -17,7 +17,25 @@
         "interfaces": null,
         "enumValues": [
           {
+            "name": "fiveminutes",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "halfhour",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "hour",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "fourhours",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
