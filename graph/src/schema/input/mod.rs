@@ -667,10 +667,10 @@ pub enum AggregationInterval {
 impl AggregationInterval {
     pub fn as_str(&self) -> &'static str {
         match self {
-            AggregationInterval::FiveMinutes => "5m",
-            AggregationInterval::HalfHour => "30m",
+            AggregationInterval::FiveMinutes => "fiveminutes",
+            AggregationInterval::HalfHour => "halfhour",
             AggregationInterval::Hour => "hour",
-            AggregationInterval::FourHours => "4h",
+            AggregationInterval::FourHours => "fourhours",
             AggregationInterval::Day => "day",
         }
     }
@@ -742,10 +742,10 @@ impl FromStr for AggregationInterval {
 
     fn from_str(s: &str) -> Result<Self, Self::Err> {
         match s {
-            "5m" => Ok(AggregationInterval::FiveMinutes),
-            "30m" => Ok(AggregationInterval::HalfHour),
+            "fiveminutes" => Ok(AggregationInterval::FiveMinutes),
+            "halfhour" => Ok(AggregationInterval::HalfHour),
             "hour" => Ok(AggregationInterval::Hour),
-            "4h" => Ok(AggregationInterval::FourHours),
+            "fourhours" => Ok(AggregationInterval::FourHours),
             "day" => Ok(AggregationInterval::Day),
             _ => Err(anyhow!("invalid aggregation interval `{}`", s)),
         }
